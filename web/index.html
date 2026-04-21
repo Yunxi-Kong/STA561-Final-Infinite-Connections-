@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Connections</title>
+    <meta
+      name="description"
+      content="A word puzzle in the NYT Connections tradition, built for STA 561."
+    />
+    <meta name="theme-color" content="#030615" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Chakra+Petch:wght@500;600;700&family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body class="landing-active">
+    <div class="scene-background" aria-hidden="true"></div>
+    <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+    <div class="ambient-overlay" aria-hidden="true"></div>
+
+    <section class="start-screen" id="start-screen" aria-labelledby="start-title">
+      <div class="start-frame" aria-hidden="true"></div>
+      <div class="start-content">
+        <p class="start-kicker">STA 561 Final Project</p>
+        <h1 id="start-title">Infinite Connections</h1>
+        <p class="start-copy">
+          <em>Per aspera ad astra.</em>
+          Through hardship, to the stars.
+        </p>
+        <button class="start-button" id="start-play-button" type="button">
+          Start playing
+        </button>
+        <p class="start-footnote">100 original puzzles.</p>
+      </div>
+    </section>
+
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <img class="brand-mark" id="brand-art" alt="" aria-hidden="true" src="" />
+          <div>
+            <p class="eyebrow">STA 561 Final Project</p>
+            <h1>Infinite Connections</h1>
+          </div>
+        </div>
+      </header>
+
+      <nav class="tabs" aria-label="Project sections">
+        <button class="tab-button active" data-tab="play" type="button">Play</button>
+        <button class="tab-button" data-tab="bank" type="button">Puzzle Bank</button>
+        <button class="tab-button" data-tab="generate" type="button">Studio</button>
+        <button class="tab-button" data-tab="dashboard" type="button">Review</button>
+        <button class="tab-button" data-tab="method" type="button">How it works</button>
+      </nav>
+
+      <main class="content">
+        <section class="panel view active" id="view-play" aria-labelledby="play-title">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Current board</p>
+              <h2 id="play-title">Find four hidden groups</h2>
+            </div>
+            <div class="panel-actions">
+              <button class="ghost-button" id="shuffle-button" type="button">Shuffle</button>
+              <button class="ghost-button" id="reveal-button" type="button">Reveal</button>
+              <button class="ghost-button" id="review-mode-button" type="button" aria-pressed="false">Review mode</button>
+              <button class="primary-button" id="next-button" type="button">Next puzzle</button>
+            </div>
+          </div>
+
+          <div class="play-grid">
+            <div class="play-main">
+              <div class="hud hud-compact">
+                <div class="hud-card">
+                  <span class="hud-label">Mistakes</span>
+                  <div class="mistakes" id="mistakes-indicator"></div>
+                </div>
+                <div class="hud-card">
+                  <span class="hud-label">Current puzzle</span>
+                  <div class="hud-value" id="puzzle-meta">Puzzle 1</div>
+                  <div class="hud-sub" id="puzzle-source">Play bank</div>
+                </div>
+              </div>
+
+              <div class="solved-rack" id="solved-rack" aria-live="polite"></div>
+
+              <div class="board-shell">
+                <div class="board-grid" id="board" aria-label="Connections board"></div>
+                <div class="board-status" id="board-status"></div>
+              </div>
+
+              <div class="compose-bar">
+                <div class="compose-track" id="selection-track" aria-label="Selected words"></div>
+                <button class="primary-button" id="submit-button" type="button">Submit guess</button>
+              </div>
+            </div>
+
+            <aside class="side-column">
+              <section class="mini-panel">
+                <div class="mini-panel-head">
+                  <h3>About this board</h3>
+                  <span class="mini-chip" id="difficulty-chip">Balanced</span>
+                </div>
+                <p id="curator-note" class="note-copy">
+                  Pick four words that feel related. Correct groups lock in.
+                </p>
+              </section>
+
+              <section class="mini-panel">
+                <div class="mini-panel-head">
+                  <h3>Progress</h3>
+                  <span class="mini-chip" id="progress-chip">0 / 4 groups</span>
+                </div>
+                <div class="progress-list" id="progress-list"></div>
+              </section>
+
+            </aside>
+          </div>
+        </section>
+
+        <section class="panel view" id="view-generate" aria-labelledby="generate-title">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Studio</p>
+              <h2 id="generate-title">Look inside a generated board</h2>
+            </div>
+            <div class="panel-actions">
+              <button class="ghost-button" id="mock-refresh-button" type="button">New sample</button>
+            </div>
+          </div>
+
+          <div class="generate-grid">
+            <div class="mini-panel">
+              <div class="mini-panel-head">
+                <h3>Strategy</h3>
+                <span class="mini-chip" id="mock-strategy-chip">semantic</span>
+              </div>
+              <p class="note-copy" id="mock-prompt">
+                A sample board with its groups shown openly.
+              </p>
+              <div class="mock-metrics" id="mock-metrics"></div>
+            </div>
+
+            <div class="mini-panel">
+              <div class="mini-panel-head">
+                <h3>Preview</h3>
+              </div>
+              <div class="mock-board" id="mock-board"></div>
+            </div>
+
+            <div class="mini-panel">
+              <div class="mini-panel-head">
+                <h3>Build notes</h3>
+              </div>
+              <ul class="bullet-list" id="mock-reasons"></ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel view" id="view-dashboard" aria-labelledby="dashboard-title">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Review</p>
+              <h2 id="dashboard-title">Batch review</h2>
+            </div>
+          </div>
+          <div id="dashboard-root" class="dashboard-root"></div>
+        </section>
+
+        <section class="panel view" id="view-bank" aria-labelledby="bank-title">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">Puzzle bank</p>
+              <h2 id="bank-title">Browse the 100-board set</h2>
+            </div>
+            <div class="panel-actions bank-controls">
+              <label class="search-wrap" aria-label="Filter puzzles">
+                <span>Filter</span>
+                <input id="bank-filter" type="search" placeholder="Search by title, words, or note" />
+              </label>
+            </div>
+          </div>
+          <div class="bank-meta">
+            <div class="status-pill ghost" id="bank-count">0 puzzles</div>
+            <div class="status-pill ghost" id="bank-focus">Click any puzzle to play it</div>
+          </div>
+          <div class="bank-grid" id="bank-grid"></div>
+        </section>
+
+        <section class="panel view" id="view-method" aria-labelledby="method-title">
+          <div class="panel-head">
+            <div>
+              <p class="eyebrow">How it works</p>
+              <h2 id="method-title">How the boards are built</h2>
+            </div>
+          </div>
+
+          <div class="method-grid">
+            <article class="mini-panel">
+              <h3>Generate</h3>
+              <p class="note-copy">
+                Draw from a local word bank — semantic groups, phrase
+                completions, themes, and wordplay.
+              </p>
+            </article>
+            <article class="mini-panel">
+              <h3>Screen</h3>
+              <p class="note-copy">
+                Check each board for format, overlap with real NYT,
+                repeated groups, and ambiguity. Anything broken is dropped.
+              </p>
+            </article>
+            <article class="mini-panel">
+              <h3>Curate</h3>
+              <p class="note-copy">
+                Keep the strongest hundred: diverse, uniquely solvable,
+                and ready to play.
+              </p>
+            </article>
+            <article class="mini-panel">
+              <h3>Play</h3>
+              <p class="note-copy">
+                The play view keeps the answer hidden until the board
+                is solved, revealed, or the mistake limit is reached.
+              </p>
+            </article>
+          </div>
+
+          <div class="method-flow">
+            <div class="flow-step">
+              <span>1</span>
+              <p>Make thousands of candidate boards locally.</p>
+            </div>
+            <div class="flow-step">
+              <span>2</span>
+              <p>Drop boards that are broken, repeated, obscure, or ambiguous.</p>
+            </div>
+            <div class="flow-step">
+              <span>3</span>
+              <p>Keep a strong play bank ready to go.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>STA 561 | Infinite Connections | Duke</span>
+      </footer>
+    </div>
+
+    <div class="celebration" id="celebration" aria-hidden="true" role="dialog" aria-labelledby="celebration-title">
+      <div class="celebration-scrim"></div>
+      <div class="halo"></div>
+      <div class="halo halo-2"></div>
+      <div class="sweep"></div>
+      <div class="celebration-dust" id="celebration-dust"></div>
+      <div class="victory">
+        <div class="victory-kicker">Constellation Complete</div>
+        <h2 class="victory-title" id="celebration-title">Infinite <em>Connections</em> Forged</h2>
+        <p class="victory-body" id="celebration-body">
+          Four hidden constellations aligned. Next board whenever you're ready.
+        </p>
+        <div class="victory-map" id="celebration-map"></div>
+        <button class="victory-dismiss" type="button" id="celebration-dismiss">Continue</button>
+      </div>
+    </div>
+  </body>
+</html>

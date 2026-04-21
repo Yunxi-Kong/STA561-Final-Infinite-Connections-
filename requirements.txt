@@ -1,0 +1,27 @@
+# Core (existing)
+openai>=2.0.0
+wordfreq>=3.1.1
+
+# A+ upgrade: Phase 0 — free-resource pipeline
+# ---------------------------------------------------------------------------
+# Embedding-based solver, NLTK wordplay resources, multi-solver pipeline.
+sentence-transformers>=3.0.0
+nltk>=3.9
+scikit-learn>=1.4
+scipy>=1.13
+numpy>=1.26
+pandas>=2.2
+
+# HuggingFace datasets (unified NYT Connections reference corpus).
+datasets>=2.20
+huggingface-hub>=0.24
+
+# Classifier for NYT-likeness plausibility scoring.
+xgboost>=2.0
+
+# HTTP client for local Ollama (qwen + llama) and for
+# Cerebras / Groq / Gemini which all expose OpenAI-compatible endpoints.
+requests>=2.31
+
+# Gemini SDK is optional (the OpenAI-compat endpoint also works).
+google-generativeai>=0.7; python_version >= "3.9"

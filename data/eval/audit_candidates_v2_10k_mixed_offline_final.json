@@ -1,0 +1,1124 @@
+{
+  "input": "data\\puzzles\\candidates_v2_10k_mixed_offline_final.json",
+  "history": "data\\history\\unified_reference.json",
+  "count": 10000,
+  "malformed": 0,
+  "unique_boards": 9998,
+  "duplicate_board_slots": 2,
+  "unique_exact_groups": 12554,
+  "duplicate_exact_group_slots": 27446,
+  "unique_words": 1429,
+  "max_word_count": 465,
+  "max_group_count": 90,
+  "max_category_count": 300,
+  "strategy_counts": {
+    "phrase_completion+semantic+wordplay": 2700,
+    "semantic": 2850,
+    "phrase_completion+semantic": 2317,
+    "semantic+wordplay": 2133
+  },
+  "top_words": [
+    [
+      "GREEN",
+      465
+    ],
+    [
+      "COURT",
+      465
+    ],
+    [
+      "BLACK",
+      462
+    ],
+    [
+      "CHECK",
+      443
+    ],
+    [
+      "NIGHT",
+      435
+    ],
+    [
+      "FLASH",
+      415
+    ],
+    [
+      "SEA",
+      403
+    ],
+    [
+      "HOUSE",
+      385
+    ],
+    [
+      "KEY",
+      375
+    ],
+    [
+      "BASE",
+      357
+    ],
+    [
+      "BENCH",
+      355
+    ],
+    [
+      "POST",
+      354
+    ],
+    [
+      "BED",
+      352
+    ],
+    [
+      "AIR",
+      342
+    ],
+    [
+      "BLOCK",
+      336
+    ],
+    [
+      "SCORE",
+      330
+    ],
+    [
+      "WATER",
+      328
+    ],
+    [
+      "GATE",
+      327
+    ],
+    [
+      "VOLLEY",
+      303
+    ],
+    [
+      "NOTE",
+      302
+    ],
+    [
+      "FOOT",
+      300
+    ],
+    [
+      "ROOM",
+      289
+    ],
+    [
+      "BALL",
+      287
+    ],
+    [
+      "DASH",
+      281
+    ],
+    [
+      "GROUND",
+      277
+    ],
+    [
+      "BATH",
+      273
+    ],
+    [
+      "CLASS",
+      270
+    ],
+    [
+      "PHOENIX",
+      269
+    ],
+    [
+      "DARK",
+      263
+    ],
+    [
+      "CRAWL",
+      262
+    ]
+  ],
+  "top_groups": [
+    {
+      "count": 90,
+      "words": [
+        "BED",
+        "DEAD",
+        "HEAD",
+        "LEAD"
+      ]
+    },
+    {
+      "count": 89,
+      "words": [
+        "ACE",
+        "BASE",
+        "CASE",
+        "FACE"
+      ]
+    },
+    {
+      "count": 88,
+      "words": [
+        "BIOLOGY",
+        "ECOLOGY",
+        "GEOLOGY",
+        "ZOOLOGY"
+      ]
+    },
+    {
+      "count": 87,
+      "words": [
+        "BRING",
+        "KING",
+        "RING",
+        "SING"
+      ]
+    },
+    {
+      "count": 85,
+      "words": [
+        "EE",
+        "JAY",
+        "KAY",
+        "VEE"
+      ]
+    },
+    {
+      "count": 85,
+      "words": [
+        "BOWL",
+        "CONTROL",
+        "SCROLL",
+        "SEOUL"
+      ]
+    },
+    {
+      "count": 84,
+      "words": [
+        "CEASE",
+        "FLEECE",
+        "LEASE",
+        "NIECE"
+      ]
+    },
+    {
+      "count": 83,
+      "words": [
+        "AY",
+        "BE",
+        "SEA",
+        "VEE"
+      ]
+    },
+    {
+      "count": 82,
+      "words": [
+        "CLAM",
+        "GRAM",
+        "LAMB",
+        "SPAM"
+      ]
+    },
+    {
+      "count": 82,
+      "words": [
+        "CAN",
+        "FAN",
+        "JAPAN",
+        "PAN"
+      ]
+    },
+    {
+      "count": 81,
+      "words": [
+        "CLARINET",
+        "DEBT",
+        "PIPETTE",
+        "ROULETTE"
+      ]
+    },
+    {
+      "count": 80,
+      "words": [
+        "BRAID",
+        "GRADE",
+        "JADE",
+        "SPADE"
+      ]
+    },
+    {
+      "count": 80,
+      "words": [
+        "ASH",
+        "BASH",
+        "CASH",
+        "CLASH"
+      ]
+    },
+    {
+      "count": 79,
+      "words": [
+        "BOUND",
+        "FOUND",
+        "GROUND",
+        "HOUND"
+      ]
+    },
+    {
+      "count": 77,
+      "words": [
+        "APP",
+        "SCRAP",
+        "TAP",
+        "WRAP"
+      ]
+    },
+    {
+      "count": 77,
+      "words": [
+        "BLOCK",
+        "CLOCK",
+        "FLOCK",
+        "KNOCK"
+      ]
+    },
+    {
+      "count": 77,
+      "words": [
+        "CHIME",
+        "CLIMB",
+        "CRIME",
+        "DIME"
+      ]
+    },
+    {
+      "count": 76,
+      "words": [
+        "BALI",
+        "COLLIE",
+        "TROLLEY",
+        "VOLLEY"
+      ]
+    },
+    {
+      "count": 75,
+      "words": [
+        "DRUM",
+        "FROM",
+        "PLUM",
+        "THUMB"
+      ]
+    },
+    {
+      "count": 74,
+      "words": [
+        "BRAZIL",
+        "DILL",
+        "DRILL",
+        "GRILL"
+      ]
+    },
+    {
+      "count": 74,
+      "words": [
+        "APPEAL",
+        "EEL",
+        "FEEL",
+        "HEEL"
+      ]
+    },
+    {
+      "count": 74,
+      "words": [
+        "CROP",
+        "DROP",
+        "HOP",
+        "POP"
+      ]
+    },
+    {
+      "count": 73,
+      "words": [
+        "COAT",
+        "GOAT",
+        "NOTE",
+        "QUOTE"
+      ]
+    },
+    {
+      "count": 73,
+      "words": [
+        "ARE",
+        "CAR",
+        "GUITAR",
+        "JAR"
+      ]
+    },
+    {
+      "count": 72,
+      "words": [
+        "AISLE",
+        "FILE",
+        "MILE",
+        "NILE"
+      ]
+    },
+    {
+      "count": 72,
+      "words": [
+        "BRIGHT",
+        "BYTE",
+        "FIGHT",
+        "FLIGHT"
+      ]
+    },
+    {
+      "count": 71,
+      "words": [
+        "AIR",
+        "BEAR",
+        "CHAIR",
+        "FAIR"
+      ]
+    },
+    {
+      "count": 71,
+      "words": [
+        "BURMESE",
+        "CHEESE",
+        "MALTESE",
+        "SIAMESE"
+      ]
+    },
+    {
+      "count": 68,
+      "words": [
+        "BOOT",
+        "FLUTE",
+        "MUTE",
+        "NEWT"
+      ]
+    },
+    {
+      "count": 68,
+      "words": [
+        "BEE",
+        "BRIE",
+        "CURIE",
+        "FREE"
+      ]
+    }
+  ],
+  "top_categories": [
+    [
+      "___ BOOK",
+      300
+    ],
+    [
+      "___ RING",
+      297
+    ],
+    [
+      "Homophones of letters",
+      295
+    ],
+    [
+      "___ LIGHT",
+      282
+    ],
+    [
+      "___ MAIL",
+      270
+    ],
+    [
+      "___ SERVICE",
+      269
+    ],
+    [
+      "___ KEY",
+      267
+    ],
+    [
+      "___ LINE",
+      265
+    ],
+    [
+      "___ FIRE",
+      265
+    ],
+    [
+      "___ BIRD",
+      263
+    ],
+    [
+      "___ ROOM",
+      260
+    ],
+    [
+      "___ CARD",
+      259
+    ],
+    [
+      "___ STAR",
+      258
+    ],
+    [
+      "___ BOARD",
+      258
+    ],
+    [
+      "___ WORK",
+      255
+    ],
+    [
+      "___ SCHOOL",
+      250
+    ],
+    [
+      "___ PRESS",
+      249
+    ],
+    [
+      "___ MARK",
+      249
+    ],
+    [
+      "___ BOX",
+      249
+    ],
+    [
+      "___ HOUSE",
+      245
+    ],
+    [
+      "___ TABLE",
+      242
+    ],
+    [
+      "___ WATER",
+      241
+    ],
+    [
+      "___ BALL",
+      241
+    ],
+    [
+      "___ TIME",
+      238
+    ],
+    [
+      "Months",
+      227
+    ],
+    [
+      "___ GAME",
+      220
+    ],
+    [
+      "Insects",
+      218
+    ],
+    [
+      "Book parts",
+      217
+    ],
+    [
+      "Music genres",
+      216
+    ],
+    [
+      "Court terms",
+      213
+    ]
+  ],
+  "validation_sample": {
+    "checked": 10000,
+    "error_count": 0,
+    "errors": []
+  },
+  "history_overlap": {
+    "history_count": 833,
+    "exact_overlap_count": 0,
+    "examples": []
+  },
+  "blind_solver_sample": {
+    "checked": 10000,
+    "status_counts": {
+      "unique_match": 9998,
+      "ambiguous_with_match": 1,
+      "many_solutions": 1
+    },
+    "unique_match": 9998,
+    "unique_match_rate": 0.9998,
+    "examples": [
+      {
+        "puzzle_id": "local-51a65a9b6d",
+        "status": "ambiguous_with_match",
+        "candidate_group_count": 12,
+        "solution_count": 2,
+        "intended_solution_found": true,
+        "ambiguity_score": 53.0,
+        "extra_candidate_groups": [
+          {
+            "words": [
+              "CIDER",
+              "COFFEE",
+              "SODA",
+              "WATER"
+            ],
+            "category": "Beverages",
+            "strategy": "semantic",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CIDER",
+              "COFFEE",
+              "TEA",
+              "WATER"
+            ],
+            "category": "Beverages",
+            "strategy": "semantic",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CIDER",
+              "SODA",
+              "TEA",
+              "WATER"
+            ],
+            "category": "Beverages",
+            "strategy": "semantic",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "COFFEE",
+              "SODA",
+              "TEA",
+              "WATER"
+            ],
+            "category": "Beverages",
+            "strategy": "semantic",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CARD",
+              "COFFEE",
+              "ROUND",
+              "TIME"
+            ],
+            "category": "___ TABLE",
+            "strategy": "phrase_completion",
+            "difficulty": "blue"
+          },
+          {
+            "words": [
+              "CARD",
+              "COFFEE",
+              "ROUND",
+              "WATER"
+            ],
+            "category": "___ TABLE",
+            "strategy": "phrase_completion",
+            "difficulty": "blue"
+          },
+          {
+            "words": [
+              "CARD",
+              "COFFEE",
+              "TIME",
+              "WATER"
+            ],
+            "category": "___ TABLE",
+            "strategy": "phrase_completion",
+            "difficulty": "blue"
+          },
+          {
+            "words": [
+              "COFFEE",
+              "ROUND",
+              "TIME",
+              "WATER"
+            ],
+            "category": "___ TABLE",
+            "strategy": "phrase_completion",
+            "difficulty": "blue"
+          }
+        ],
+        "solutions": [
+          [
+            {
+              "words": [
+                "CARD",
+                "COFFEE",
+                "ROUND",
+                "TIME"
+              ],
+              "category": "___ TABLE",
+              "strategy": "phrase_completion",
+              "difficulty": "blue"
+            },
+            {
+              "words": [
+                "CIDER",
+                "SODA",
+                "TEA",
+                "WATER"
+              ],
+              "category": "Beverages",
+              "strategy": "semantic",
+              "difficulty": "yellow"
+            },
+            {
+              "words": [
+                "GRAINY",
+                "SATINY",
+                "SILKY",
+                "VELVETY"
+              ],
+              "category": "Textures",
+              "strategy": "semantic",
+              "difficulty": "green"
+            },
+            {
+              "words": [
+                "MEASURE",
+                "NOTE",
+                "REST",
+                "STAFF"
+              ],
+              "category": "Music notation terms",
+              "strategy": "semantic",
+              "difficulty": "green"
+            }
+          ],
+          [
+            {
+              "words": [
+                "CARD",
+                "ROUND",
+                "TIME",
+                "WATER"
+              ],
+              "category": "___ TABLE",
+              "strategy": "phrase_completion",
+              "difficulty": "blue"
+            },
+            {
+              "words": [
+                "CIDER",
+                "COFFEE",
+                "SODA",
+                "TEA"
+              ],
+              "category": "Beverages",
+              "strategy": "semantic",
+              "difficulty": "yellow"
+            },
+            {
+              "words": [
+                "GRAINY",
+                "SATINY",
+                "SILKY",
+                "VELVETY"
+              ],
+              "category": "Textures",
+              "strategy": "semantic",
+              "difficulty": "green"
+            },
+            {
+              "words": [
+                "MEASURE",
+                "NOTE",
+                "REST",
+                "STAFF"
+              ],
+              "category": "Music notation terms",
+              "strategy": "semantic",
+              "difficulty": "green"
+            }
+          ]
+        ]
+      },
+      {
+        "puzzle_id": "tfv2-73792dd5d3",
+        "status": "many_solutions",
+        "candidate_group_count": 72,
+        "solution_count": 25,
+        "intended_solution_found": true,
+        "ambiguity_score": 90.0,
+        "extra_candidate_groups": [
+          {
+            "words": [
+              "CREDIT",
+              "DEBIT",
+              "FLASH",
+              "GIFT"
+            ],
+            "category": "___ CARD",
+            "strategy": "phrase_completion",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CREDIT",
+              "DEBIT",
+              "FLASH",
+              "INDEX"
+            ],
+            "category": "___ CARD",
+            "strategy": "phrase_completion",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CREDIT",
+              "DEBIT",
+              "FLASH",
+              "POST"
+            ],
+            "category": "___ CARD",
+            "strategy": "phrase_completion",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CREDIT",
+              "DEBIT",
+              "FLASH",
+              "REPORT"
+            ],
+            "category": "___ CARD",
+            "strategy": "phrase_completion",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CREDIT",
+              "DEBIT",
+              "FLASH",
+              "SCORE"
+            ],
+            "category": "___ CARD",
+            "strategy": "phrase_completion",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CREDIT",
+              "DEBIT",
+              "GIFT",
+              "INDEX"
+            ],
+            "category": "___ CARD",
+            "strategy": "phrase_completion",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CREDIT",
+              "DEBIT",
+              "GIFT",
+              "POST"
+            ],
+            "category": "___ CARD",
+            "strategy": "phrase_completion",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CREDIT",
+              "DEBIT",
+              "GIFT",
+              "REPORT"
+            ],
+            "category": "___ CARD",
+            "strategy": "phrase_completion",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CREDIT",
+              "DEBIT",
+              "GIFT",
+              "SCORE"
+            ],
+            "category": "___ CARD",
+            "strategy": "phrase_completion",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CREDIT",
+              "DEBIT",
+              "INDEX",
+              "POST"
+            ],
+            "category": "___ CARD",
+            "strategy": "phrase_completion",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CREDIT",
+              "DEBIT",
+              "INDEX",
+              "REPORT"
+            ],
+            "category": "___ CARD",
+            "strategy": "phrase_completion",
+            "difficulty": "yellow"
+          },
+          {
+            "words": [
+              "CREDIT",
+              "DEBIT",
+              "INDEX",
+              "SCORE"
+            ],
+            "category": "___ CARD",
+            "strategy": "phrase_completion",
+            "difficulty": "yellow"
+          }
+        ],
+        "solutions": [
+          [
+            {
+              "words": [
+                "BRAID",
+                "GRADE",
+                "JADE",
+                "SPADE"
+              ],
+              "category": "Words rhyming with /EY D/",
+              "strategy": "wordplay",
+              "difficulty": "blue"
+            },
+            {
+              "words": [
+                "CREDIT",
+                "DEBIT",
+                "FLASH",
+                "GIFT"
+              ],
+              "category": "___ CARD",
+              "strategy": "phrase_completion",
+              "difficulty": "yellow"
+            },
+            {
+              "words": [
+                "FRENCH",
+                "HINDI",
+                "SPANISH",
+                "SWAHILI"
+              ],
+              "category": "Languages",
+              "strategy": "semantic",
+              "difficulty": "yellow"
+            },
+            {
+              "words": [
+                "INDEX",
+                "POST",
+                "REPORT",
+                "SCORE"
+              ],
+              "category": "___ CARD",
+              "strategy": "phrase_completion",
+              "difficulty": "yellow"
+            }
+          ],
+          [
+            {
+              "words": [
+                "BRAID",
+                "GRADE",
+                "JADE",
+                "SPADE"
+              ],
+              "category": "Words rhyming with /EY D/",
+              "strategy": "wordplay",
+              "difficulty": "blue"
+            },
+            {
+              "words": [
+                "CREDIT",
+                "DEBIT",
+                "FLASH",
+                "INDEX"
+              ],
+              "category": "___ CARD",
+              "strategy": "phrase_completion",
+              "difficulty": "yellow"
+            },
+            {
+              "words": [
+                "FRENCH",
+                "HINDI",
+                "SPANISH",
+                "SWAHILI"
+              ],
+              "category": "Languages",
+              "strategy": "semantic",
+              "difficulty": "yellow"
+            },
+            {
+              "words": [
+                "GIFT",
+                "POST",
+                "REPORT",
+                "SCORE"
+              ],
+              "category": "___ CARD",
+              "strategy": "phrase_completion",
+              "difficulty": "yellow"
+            }
+          ],
+          [
+            {
+              "words": [
+                "BRAID",
+                "GRADE",
+                "JADE",
+                "SPADE"
+              ],
+              "category": "Words rhyming with /EY D/",
+              "strategy": "wordplay",
+              "difficulty": "blue"
+            },
+            {
+              "words": [
+                "CREDIT",
+                "DEBIT",
+                "FLASH",
+                "POST"
+              ],
+              "category": "___ CARD",
+              "strategy": "phrase_completion",
+              "difficulty": "yellow"
+            },
+            {
+              "words": [
+                "FRENCH",
+                "HINDI",
+                "SPANISH",
+                "SWAHILI"
+              ],
+              "category": "Languages",
+              "strategy": "semantic",
+              "difficulty": "yellow"
+            },
+            {
+              "words": [
+                "GIFT",
+                "INDEX",
+                "REPORT",
+                "SCORE"
+              ],
+              "category": "___ CARD",
+              "strategy": "phrase_completion",
+              "difficulty": "yellow"
+            }
+          ],
+          [
+            {
+              "words": [
+                "BRAID",
+                "GRADE",
+                "JADE",
+                "SPADE"
+              ],
+              "category": "Words rhyming with /EY D/",
+              "strategy": "wordplay",
+              "difficulty": "blue"
+            },
+            {
+              "words": [
+                "CREDIT",
+                "DEBIT",
+                "FLASH",
+                "REPORT"
+              ],
+              "category": "___ CARD",
+              "strategy": "phrase_completion",
+              "difficulty": "yellow"
+            },
+            {
+              "words": [
+                "FRENCH",
+                "HINDI",
+                "SPANISH",
+                "SWAHILI"
+              ],
+              "category": "Languages",
+              "strategy": "semantic",
+              "difficulty": "yellow"
+            },
+            {
+              "words": [
+                "GIFT",
+                "INDEX",
+                "POST",
+                "SCORE"
+              ],
+              "category": "___ CARD",
+              "strategy": "phrase_completion",
+              "difficulty": "yellow"
+            }
+          ],
+          [
+            {
+              "words": [
+                "BRAID",
+                "GRADE",
+                "JADE",
+                "SPADE"
+              ],
+              "category": "Words rhyming with /EY D/",
+              "strategy": "wordplay",
+              "difficulty": "blue"
+            },
+            {
+              "words": [
+                "CREDIT",
+                "DEBIT",
+                "FLASH",
+                "SCORE"
+              ],
+              "category": "___ CARD",
+              "strategy": "phrase_completion",
+              "difficulty": "yellow"
+            },
+            {
+              "words": [
+                "FRENCH",
+                "HINDI",
+                "SPANISH",
+                "SWAHILI"
+              ],
+              "category": "Languages",
+              "strategy": "semantic",
+              "difficulty": "yellow"
+            },
+            {
+              "words": [
+                "GIFT",
+                "INDEX",
+                "POST",
+                "REPORT"
+              ],
+              "category": "___ CARD",
+              "strategy": "phrase_completion",
+              "difficulty": "yellow"
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

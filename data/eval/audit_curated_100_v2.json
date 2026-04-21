@@ -1,0 +1,554 @@
+{
+  "input": "data\\puzzles\\curated_100_v2.json",
+  "history": "data\\history\\unified_reference.json",
+  "count": 100,
+  "malformed": 0,
+  "unique_boards": 100,
+  "duplicate_board_slots": 0,
+  "unique_exact_groups": 400,
+  "duplicate_exact_group_slots": 0,
+  "unique_words": 908,
+  "max_word_count": 5,
+  "max_group_count": 1,
+  "max_category_count": 4,
+  "strategy_counts": {
+    "phrase_completion+semantic+wordplay": 68,
+    "semantic+wordplay": 27,
+    "phrase_completion+semantic": 5
+  },
+  "top_words": [
+    [
+      "NIGHT",
+      5
+    ],
+    [
+      "KEY",
+      5
+    ],
+    [
+      "BLACK",
+      5
+    ],
+    [
+      "CARD",
+      5
+    ],
+    [
+      "WORD",
+      5
+    ],
+    [
+      "ROCK",
+      5
+    ],
+    [
+      "BENCH",
+      5
+    ],
+    [
+      "SCHOOL",
+      5
+    ],
+    [
+      "SCORE",
+      5
+    ],
+    [
+      "BLOCK",
+      5
+    ],
+    [
+      "GREEN",
+      5
+    ],
+    [
+      "FIRE",
+      5
+    ],
+    [
+      "SEA",
+      5
+    ],
+    [
+      "BATH",
+      5
+    ],
+    [
+      "BALL",
+      5
+    ],
+    [
+      "DARK",
+      5
+    ],
+    [
+      "HOUSE",
+      5
+    ],
+    [
+      "DASH",
+      5
+    ],
+    [
+      "ROOM",
+      5
+    ],
+    [
+      "MASTER",
+      5
+    ],
+    [
+      "WATER",
+      5
+    ],
+    [
+      "DISCO",
+      5
+    ],
+    [
+      "DEBT",
+      5
+    ],
+    [
+      "DIAPER",
+      4
+    ],
+    [
+      "BOUND",
+      4
+    ],
+    [
+      "ONESIE",
+      4
+    ],
+    [
+      "POUND",
+      4
+    ],
+    [
+      "WEDDING",
+      4
+    ],
+    [
+      "CLIMB",
+      4
+    ],
+    [
+      "THUMB",
+      4
+    ]
+  ],
+  "top_groups": [
+    {
+      "count": 1,
+      "words": [
+        "BIB",
+        "DIAPER",
+        "ONESIE",
+        "RATTLE"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "LUNCH",
+        "NIGHT",
+        "PRIME",
+        "SHOW"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "BOUND",
+        "HOUND",
+        "POUND",
+        "ROUND"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "FROG",
+        "IGUANA",
+        "LIZARD",
+        "VIPER"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "DRAMA",
+        "HORROR",
+        "MUSICAL",
+        "WESTERN"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "AUSTIN",
+        "DOVER",
+        "HELENA",
+        "MADISON"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "FATE",
+        "GATE",
+        "RATE",
+        "STATE"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "KEY",
+        "MOOD",
+        "NAPKIN",
+        "WEDDING"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "BLACK",
+        "ELECTRONIC",
+        "JUNK",
+        "SNAIL"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "BOMB",
+        "CLIMB",
+        "DOUBT",
+        "THUMB"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "COVER",
+        "PREFACE",
+        "SPINE",
+        "TITLE"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "BACKSTROKE",
+        "BREASTSTROKE",
+        "BUTTERFLY",
+        "CRAWL"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "HERON",
+        "ROBIN",
+        "SPARROW",
+        "TURKEY"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "GROUND",
+        "POUND",
+        "SOUND",
+        "WOUND"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "CHECK",
+        "INTEREST",
+        "LOAN",
+        "SAVINGS"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "CLASS",
+        "KEY",
+        "NAPKIN",
+        "WEDDING"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "BOOKSTORE",
+        "DELI",
+        "GROCERY",
+        "PHARMACY"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "BANGS",
+        "BRAID",
+        "CURL",
+        "WAVE"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "FOOD",
+        "POSTAL",
+        "SECRET",
+        "TABLE"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "CRIME",
+        "MIME",
+        "PRIME",
+        "SLIME"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "BOARD",
+        "CARD",
+        "VIDEO",
+        "WORD"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "CHARD",
+        "LETTUCE",
+        "ROMAINE",
+        "SPINACH"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "GRATER",
+        "SPATULA",
+        "STRAINER",
+        "WHISK"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "CIVIC",
+        "KAYAK",
+        "REFER",
+        "TENET"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "BUTTON",
+        "PIN",
+        "SEAM",
+        "THREAD"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "KNIFE",
+        "KNIGHT",
+        "WRITE",
+        "WRONG"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "CEASE",
+        "CROSS",
+        "FOREST",
+        "WILD"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "COTTON",
+        "FLEECE",
+        "LINEN",
+        "TWEED"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "APRICOT",
+        "KIWI",
+        "PEACH",
+        "PLUM"
+      ]
+    },
+    {
+      "count": 1,
+      "words": [
+        "ARE",
+        "EYE",
+        "TEA",
+        "WHY"
+      ]
+    }
+  ],
+  "top_categories": [
+    [
+      "Baby items",
+      4
+    ],
+    [
+      "Words ending in -OUND",
+      4
+    ],
+    [
+      "Film genres",
+      4
+    ],
+    [
+      "Words ending in -ATE",
+      4
+    ],
+    [
+      "___ RING",
+      4
+    ],
+    [
+      "___ MAIL",
+      4
+    ],
+    [
+      "Words with silent B",
+      4
+    ],
+    [
+      "Store types",
+      4
+    ],
+    [
+      "___ SERVICE",
+      4
+    ],
+    [
+      "Rhymes with TIME",
+      4
+    ],
+    [
+      "Palindromes",
+      4
+    ],
+    [
+      "Words with silent first letters",
+      4
+    ],
+    [
+      "___ FIRE",
+      4
+    ],
+    [
+      "Fabric types",
+      4
+    ],
+    [
+      "Homophones of letters",
+      4
+    ],
+    [
+      "Words ending in -OCK",
+      4
+    ],
+    [
+      "___ PRESS",
+      4
+    ],
+    [
+      "___ BOX",
+      4
+    ],
+    [
+      "___ CARD",
+      4
+    ],
+    [
+      "___ HOUSE",
+      4
+    ],
+    [
+      "Clothing items",
+      4
+    ],
+    [
+      "Words ending in -ARK",
+      4
+    ],
+    [
+      "___ WATER",
+      4
+    ],
+    [
+      "___ ROOM",
+      4
+    ],
+    [
+      "Words ending in -ASH",
+      4
+    ],
+    [
+      "Card games",
+      4
+    ],
+    [
+      "___ BOOK",
+      4
+    ],
+    [
+      "Words ending in -ING",
+      4
+    ],
+    [
+      "___ BALL",
+      4
+    ],
+    [
+      "___ KEY",
+      4
+    ]
+  ],
+  "validation_sample": {
+    "checked": 100,
+    "error_count": 0,
+    "errors": []
+  },
+  "history_overlap": {
+    "history_count": 833,
+    "exact_overlap_count": 0,
+    "examples": []
+  },
+  "blind_solver_sample": {
+    "checked": 100,
+    "status_counts": {
+      "unique_match": 100
+    },
+    "unique_match": 100,
+    "unique_match_rate": 1.0,
+    "examples": []
+  }
+}
