@@ -25,6 +25,7 @@ The emphasis of the project is not only on generation, but on the decision layer
 - `scripts/` - setup, generation, curation, audit, and evaluation scripts
 - `data/` - cached history sets, lexicons, puzzle outputs, and evaluation summaries
 - `web/` - deployed interface for playing and reviewing the curated puzzle bank
+- `report/` - companion reproducibility notebook for the backend pipeline
 - `tests/` - lightweight pipeline checks
 
 ## Interface snapshots
@@ -69,6 +70,16 @@ python scripts\audit_puzzle_batch.py --input data/puzzles/published.json --histo
 ```powershell
 python scripts\build_curated_bank.py --puzzles data/puzzles/published.json --output data/puzzles/curated_100.json --target 100 --max-word-uses 5 --max-group-uses 1 --max-category-uses 4 --require-solver-unique
 ```
+
+### 5. Open the companion notebook
+
+The repository includes a small Jupyter notebook at:
+
+```text
+report/generator_audit_demo.ipynb
+```
+
+It demonstrates the backend workflow on a small local sample: loading the historical reference set, generating boards, running validation and ambiguity checks, and summarizing the resulting metrics.
 
 ## Evaluation highlights
 
